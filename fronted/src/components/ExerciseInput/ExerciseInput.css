@@ -1,0 +1,59 @@
+.input-form {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 0.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .file-group {
+    margin-bottom: 2.2rem;
+  }
+  
+  .input-row {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    margin-top: 0.8rem;
+  }
+  
+  .input-group {
+    flex: 1;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    max-width: 100%;
+    min-width: 0;
+  }
+  
+  .file-input {
+    display: block;
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 640px) {
+    .input-row {
+      flex-direction: column;
+    }
+  
+    .form-title {
+      font-size: 1.4rem;
+    }
+  }
+  
+  
+  

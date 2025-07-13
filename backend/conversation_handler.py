@@ -1,17 +1,19 @@
-# משתנה גלובלי להיסטוריית השיחה
+# Global variable to store the conversation history
 conversation_history = []
 
-# הגדרת מספר ההודעות המקסימלי (כולל הודעת system)
-MAX_MESSAGES = 7
+# Maximum number of messages allowed in the history (including the system message)
+MAX_MESSAGES = 21
 
 
 def initialize_conversation(topic="general"):
     """
-    Initializes the conversation with a system message to define the model's role.
+    Initializes the conversation with a system message,
+    to define the model's role.
     The system message will never be deleted.
 
     Args:
-        topic (str): The topic for which new exercises will be generated. Defaults to "general".
+        topic (str): The topic for which new exercises will be generated.
+            Defaults to "general".
     """
     global conversation_history
     conversation_history = [
@@ -30,7 +32,8 @@ def initialize_conversation(topic="general"):
 
 def add_message(role, content):
     """
-    Adds a message to the conversation history and ensures a maximum of 7 messages.
+    Adds a message to the conversation history 
+        and ensures a maximum of 21 messages.
 
     Args:
         role (str): The role of the sender ("user" or "assistant").
@@ -41,7 +44,7 @@ def add_message(role, content):
     # Add the new message to the history
     conversation_history.append({"role": role, "content": content})
 
-    # Manage the message limit - keep up to 7 messages including the system message
+    # Manage the message limit - keep up to 21 messages
     while len(conversation_history) > MAX_MESSAGES:
         # Remove the first message that is not the system message
         if conversation_history[1]["role"] != "system":

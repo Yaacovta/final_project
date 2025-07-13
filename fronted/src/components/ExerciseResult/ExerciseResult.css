@@ -1,0 +1,31 @@
+.exercise-card {
+    background-color: #f8fafc;
+    border: 1px solid #dbeafe;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin-top: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .exercise-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+    border-bottom: 2px solid #60a5fa;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+  
+  .exercise-description {
+    color: #1f2937;
+    line-height: 1.6;
+    white-space: pre-line;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #e5e7eb;
+  }
+  

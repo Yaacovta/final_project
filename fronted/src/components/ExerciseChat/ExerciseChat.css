@@ -1,0 +1,66 @@
+.chat-box {
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: #f9fafb;
+  padding: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.user-msg {
+  background-color: #f2f2f2;
+  border: 1px solid #d1d5db;
+  text-align: right;
+  padding: 0.1rem 1rem; /* גובה קטן יותר (0.2rem), רוחב נשאר 1rem */
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.assistant-msg {
+  background-color: #e6f0ff;
+  border: 1px solid #99c2ff;
+  text-align: right;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  font-weight: 500;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* תיבת ההזנה */
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.chat-input button {
+  padding: 0.5rem 1rem;
+
+  background-color: #dbeafe;  
+  border: 1px solid #60a5fa;
+
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.chat-input button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}

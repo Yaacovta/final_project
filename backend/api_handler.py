@@ -19,6 +19,6 @@ def send_to_openai(conversation_history):
     completion = user.chat.completions.create(
         model="gpt-4o-mini",
         messages=conversation_history,
-        max_tokens=300
+        max_tokens=400
     )
     return completion.choices[0].message.content

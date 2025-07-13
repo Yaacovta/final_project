@@ -140,6 +140,7 @@ def save_as_pdf(output_text, name_of_new_exercise):
     pdf_file = f"{name_of_new_exercise}.pdf"
     pdf.output(pdf_file)
     print(f"PDF saved as: {pdf_file}")
+    return os.path.abspath(pdf_file)  # ADDED
 
 
 def save_as_docx(output_text, name_of_new_exercise):
@@ -150,8 +151,10 @@ def save_as_docx(output_text, name_of_new_exercise):
 
     doc.add_paragraph(output_text)
 
-    doc.save(f"{name_of_new_exercise}.docx")
-    print(f"Saved as DOCX: {name_of_new_exercise}.docx")
+    docx_file = f"{name_of_new_exercise}.docx"
+    doc.save(docx_file)
+    print(f"Saved as DOCX: {docx_file}")
+    return os.path.abspath(docx_file)  # ADDED
 
 
 def file_type_of_the_new_exercise(output_text, name_of_new_exercise, output_format):
